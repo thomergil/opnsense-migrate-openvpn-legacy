@@ -1,6 +1,6 @@
 # Migrating from OPNsense OpenVPN legacy
 
-This is a guide on how to smoothly transition away from your OpenVPN legacy setup without forcing clients to change or update their configuration. This is **not** a guide on how to set up OpenVPN on OPNsense. 
+This is a guide on how to smoothly transition away from your OPNsense OpenVPN server legacy setup without forcing clients to change or update their configuration. This is **not** a guide on how to set up OpenVPN on OPNsense. 
 
 ### Introduction
 
@@ -9,11 +9,11 @@ OPNsense is sunsetting the original OpenVPN configuration. If, like me, you are 
 ### Assumptions
 
 * You are running OPNSense 24.7.9 or higher.
-* Old OpenVPN settings are under VPN → OpenVPN → Servers [legacy].
+* Old OpenVPN server settings are under VPN → OpenVPN → Servers [legacy].
 * You were running a tunnel configured using the `IPv4 Tunnel Network` setting.
 * You had the `Redirect Gateway` option set: this forces all traffic on the client to go through the VPN.
 
-### Phase 0: Disable the existing OpenVPN Server
+### Phase 0: Disable the legacy OpenVPN Server
 
 I suggest you do not delete the legacy server setup, but disable it until you have your new setup working.
 
