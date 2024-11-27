@@ -47,3 +47,8 @@ You can skip this Phase if you do not have `TLS Authentication` enabled in your 
 12. Under `Redirect Gateway` select `default`.
 13. Press the `Save` button.
 14. Press the `Apply` button.
+
+### Phase 3: Change the firewall
+
+1. Go to Firewall → Rules → OpenVPN
+2. If you already had a rule for `10.0.8.0/24` (or something along those lines), duplicate it, edit it, and ensure it matches `192.168.2.0/24`, or whatever IP range you configured above.
